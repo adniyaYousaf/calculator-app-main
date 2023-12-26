@@ -13,8 +13,6 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 - [Author](#author)
 
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### Screenshot
@@ -23,7 +21,7 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live URL](https://euphonious-llama-66b2ea.netlify.app/)
 
 ## My process
 
@@ -57,8 +55,8 @@ equalBtn.addEventListener("click", () => {
 
 ### Useful resources
 
-- [Example resource 1](https://sass-lang.com/documentation/) - This helped me to learn Sass. I really liked its documentation and will use it going forward.
-- [Example resource 2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval) - This is an amazing website which helped me finally understand eval(). I'd recommend it to anyone still learning this concept.
+- [Sass Docs](https://sass-lang.com/documentation/) - This helped me to learn Sass. I really liked its documentation and will use it going forward.
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval) - This is an amazing website which helped me finally understand eval(). I'd recommend it to anyone still learning this concept.
 
 ## Author
 
