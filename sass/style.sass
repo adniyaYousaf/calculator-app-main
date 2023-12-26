@@ -1,0 +1,115 @@
+@use 'color'
+@use 'font'
+@use 'mixin'
+:root
+    --left: 89.7%
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    min-height: 100vh
+    background: color.$main-bg-1
+    font-family: font.$font
+    @include mixin.center($center:grid)
+
+    .container
+        min-width: 25rem
+        display: grid
+        header
+            position: relative
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 1rem
+        label
+            display: flex
+            justify-content: space-between
+            align-items: center
+            font-size: 1.2rem
+            #themeBtn
+                cursor: pointer
+                height: 1.8rem
+                width: 3rem
+                border-radius: 1rem
+                border: none
+                background: color.$keypad-bg
+                margin-left: 1rem
+            &::before
+                position: absolute
+                content: ""
+                height: 1.4rem
+                width: 1.4rem
+                background: color.$White
+                left: var(--left)
+                top: .15rem
+                border-radius: 50%
+
+        .displaysValues
+            height: 6rem
+            background: color.$screen-bg
+            border-radius: 0.8rem
+            margin-bottom: 2rem
+            color: color.$White
+            font-size: 3rem
+            display: grid
+            justify-content: flex-end
+            align-items: flex-end
+            padding: 1rem
+
+        .number-grid
+            background: color.$keypad-bg
+            height: 20rem
+            border-radius: 0.8rem 0.8rem 0 0
+            display: grid
+            grid-template-columns: auto auto auto auto
+            grid-gap: 1.3rem
+            padding: 1.5rem
+            justify-items: center
+            align-content: flex-end
+
+        .box
+            cursor: pointer
+            height: 3.2rem
+            width: 5rem
+            background: color.$Light-grayish-orange
+            border-radius: 0.6rem
+            @include mixin.center($center:grid)
+            color: color.$key-bg
+            font-weight: 700
+            font-size: 1.7rem
+            box-shadow: 0px 4px 1px color.$Grayish-orange
+            &:hover
+                background: color.$White
+            &:nth-of-type(17)
+                background: color.$key-bg
+                color: color.$White
+                box-shadow: 0px 4px 1px color.$main-bg-1
+            &:nth-of-type(18)
+                background: color.$red-key
+                color: color.$White
+                box-shadow: 0px 4px 1px color.$red-key-shadow
+        .plus, .minus, .multipulication, .divide, .dot
+            font-size: 2rem
+        .resetEqual
+            @include mixin.center($center: flex)
+            justify-content: space-between
+            background: color.$keypad-bg
+            border-radius: 0 0 0.8rem 0.8rem
+            padding-bottom: 1.7rem
+            padding-inline: 1.5rem
+            .equal, .reset
+                width: 11rem
+                color: color.$White
+            .equal
+                background: color.$red-key
+                box-shadow: 0px 4px 1px rgba(color.$red-key, .5)
+                &:hover
+                    background: rgba(color.$red-key,0.8)
+            .reset
+                background: color.$key-bg
+                box-shadow: 0px 4px 1px rgba(color.$key-bg, .5)
+                &:hover
+                    background: rgba(color.$key-bg, .8)

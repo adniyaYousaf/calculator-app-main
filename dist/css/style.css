@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url("/dist/font/LeagueSpartan-Bold.ttf");
+  font-weight: 700;
+}
+:root {
+  --left: 89.7%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: hsl(222, 26%, 31%);
+  font-family: "LeagueSpartan";
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+body .container {
+  min-width: 25rem;
+  display: grid;
+}
+body .container header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+body .container label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
+body .container label #themeBtn {
+  cursor: pointer;
+  height: 1.8rem;
+  width: 3rem;
+  border-radius: 1rem;
+  border: none;
+  background: hsl(223, 31%, 20%);
+  margin-left: 1rem;
+}
+body .container label::before {
+  position: absolute;
+  content: "";
+  height: 1.4rem;
+  width: 1.4rem;
+  background: hsl(0, 0%, 100%);
+  left: var(--left);
+  top: 0.15rem;
+  border-radius: 50%;
+}
+body .container .displaysValues {
+  height: 6rem;
+  background: hsl(224, 36%, 15%);
+  border-radius: 0.8rem;
+  margin-bottom: 2rem;
+  color: hsl(0, 0%, 100%);
+  font-size: 3rem;
+  display: grid;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 1rem;
+}
+body .container .number-grid {
+  background: hsl(223, 31%, 20%);
+  height: 20rem;
+  border-radius: 0.8rem 0.8rem 0 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1.3rem;
+  padding: 1.5rem;
+  justify-items: center;
+  align-content: flex-end;
+}
+body .container .box {
+  cursor: pointer;
+  height: 3.2rem;
+  width: 5rem;
+  background: hsl(30, 25%, 89%);
+  border-radius: 0.6rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: hsl(225, 21%, 49%);
+  font-weight: 700;
+  font-size: 1.7rem;
+  box-shadow: 0px 4px 1px hsl(28, 16%, 65%);
+}
+body .container .box:hover {
+  background: hsl(0, 0%, 100%);
+}
+body .container .box:nth-of-type(17) {
+  background: hsl(225, 21%, 49%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0px 4px 1px hsl(222, 26%, 31%);
+}
+body .container .box:nth-of-type(18) {
+  background: hsl(6, 63%, 50%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0px 4px 1px hsl(6, 63%, 50%);
+}
+body .container .plus, body .container .minus, body .container .multipulication, body .container .divide, body .container .dot {
+  font-size: 2rem;
+}
+body .container .resetEqual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background: hsl(223, 31%, 20%);
+  border-radius: 0 0 0.8rem 0.8rem;
+  padding-bottom: 1.7rem;
+  padding-inline: 1.5rem;
+}
+body .container .resetEqual .equal, body .container .resetEqual .reset {
+  width: 11rem;
+  color: hsl(0, 0%, 100%);
+}
+body .container .resetEqual .equal {
+  background: hsl(6, 63%, 50%);
+  box-shadow: 0px 4px 1px rgba(208, 63, 47, 0.5);
+}
+body .container .resetEqual .equal:hover {
+  background: rgba(208, 63, 47, 0.8);
+}
+body .container .resetEqual .reset {
+  background: hsl(225, 21%, 49%);
+  box-shadow: 0px 4px 1px rgba(99, 112, 151, 0.5);
+}
+body .container .resetEqual .reset:hover {
+  background: rgba(99, 112, 151, 0.8);
+}
+
+/*# sourceMappingURL=style.css.map */

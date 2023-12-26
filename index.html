@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator app</title>
+    <link rel="stylesheet" href="/dist/css/style.css" />
+  </head>
+  <body  id="body">
+    <section class="container">
+      <header>
+        <h1>calc</h1>
+        <label for="theme">THEME
+          <input id="themeBtn" type="button">
+        </label>
+      </header>
+      <section id="text" class="displaysValues"></section>
+      <section id="numbers" class="number-grid">
+        <div id="addExpression" class="box nine">9</div>
+        <div id="addExpression" class="box eight">8</div>
+        <div id="addExpression" class="box seven">7</div>
+        <div id="del" class="box del">DEL</div>
+
+        <div id="addExpression" class="box six">6</div>
+        <div id="addExpression" class="box five">5</div>
+        <div id="addExpression" class="box four">4</div>
+        <div id="addExpression" class="box plus">+</div>
+
+        <div id="addExpression" class="box three">3</div>
+        <div id="addExpression" class="box two">2</div>
+        <div id="addExpression" class="box one">1</div>
+        <div id="addExpression" class="box minus">-</div>
+
+        <div id="addExpression" class="box dot">.</div>
+        <div id="addExpression" class="box zero">0</div>
+        <div id="addExpression" class="box divide">/</div>
+        <div id="addExpression" class="box multipulication">*</div>
+      </section>
+      <section id="btns" class="resetEqual">
+        <div id="reset" class="box reset">RESET</div>
+        <div id="equal" class="box equal">=</div>
+      </section>
+    </section>
+    <script src="/index.js"></script>
+  </body>
+</html>
