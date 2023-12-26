@@ -46,6 +46,7 @@ theme.addEventListener('click', () => {
         text.style.background = 'hsl(224, 36%, 15%)';
         numbers.style.background = 'hsl(223, 31%, 20%)';
         btn.style.background = 'hsl(223, 31%, 20%)';
+        text.style.color = 'white';
         x = 0;
 
     }
